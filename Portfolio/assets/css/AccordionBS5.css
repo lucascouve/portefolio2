@@ -1,0 +1,43 @@
+#accordion-1 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.accordion-button:hover {
+  background: rgba(0,0,0,.04);
+  color: orange;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255,163,24,0.09);
+  color: orange;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.accordion-button::after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+

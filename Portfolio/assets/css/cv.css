@@ -1,0 +1,287 @@
+/* Format A4 */
+
+body {
+  background: rgb(204,204,204);
+}
+
+page[size="A4"] {
+  background: white;
+  width: 21cm;
+  height: 29.7cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+/* DEBUT du CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+/* Retirer les tirets des listes */
+
+.invisibleTiret {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Taille des titres moyens (EXPERIENCE,FORMATION,COMPETENCES,ACTIVITES */
+
+.titres {
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+/* PARTIE GAUCHE */
+
+.pageEntiere {
+  background-color: #023564;
+  text-align: center;
+  color: white;
+  height: 29.7cm;
+  display: flex;
+}
+
+.partGauche {
+  width: 50%;
+}
+
+.partGauche img {
+  width: 180px;
+  transform: translateX(8cm);
+  margin-top: 1.5cm;
+  position: absolute;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.partGauche .cercleLogo {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  border: 2px solid #fff;
+  margin-left: 295px;
+  margin-top: 50px;
+}
+
+/* Prénom et nom */
+
+.prenom {
+  margin-top: 2.5em;
+  margin-bottom: 1.3%;
+}
+
+.nom {
+  text-transform: uppercase;
+}
+
+.prenom, .nom {
+  font-size: 31pt;
+  text-align: left;
+  margin-left: 1em;
+}
+
+/* Recherche un stage... */
+
+.recherche {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 18.5pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+/* Expériences, dernière partie gauche */
+
+.partGauche {
+  text-align: left;
+}
+
+.partGauche .titres {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.pageEntiere {
+}
+
+.partGauche .moisExp {
+  text-transform: uppercase;
+  font-size: 11pt;
+  margin-left: 12.3%;
+  margin-top: 2%;
+}
+
+.partGauche .descriptionExp {
+  font-size: 13pt;
+  margin-left: 12.3%;
+  margin-bottom: 1%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -1%;
+}
+
+.partGauche .bis {
+  margin-left: 20%;
+  font-size: 11pt;
+  text-decoration: underline;
+}
+
+.partGauche ul {
+  /*list-style-type: "- ";*/
+  font-size: 11pt;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+/* PARTIE DROITE */
+
+.partDroite {
+  background-color: white;
+  text-align: center;
+  color: black;
+  width: 50%;
+  align-items: center;
+  height: 29.7cm;
+}
+
+.partDroite h2 {
+  color: #023564;
+}
+
+/* Partie coordonnées */
+
+.coordonnees {
+  font-size: 12pt;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.coordonnees span {
+  text-transform: uppercase;
+}
+
+/* Logo + les marges qui étaient abusées
+	(padding: top right bottom left;) */
+
+.adresse, .numTel, .adresseMail, .linkedin, .age {
+  margin: 0;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: -50px;
+}
+
+.adresse {
+  background-image: url("https://i.goopics.net/3rNdQ.png");
+  background-size: 20px;
+  padding: 50px 0 36px 40px;
+}
+
+.numTel {
+  background-image: url("https://i.goopics.net/kaWJb_tb.png");
+  background-size: 28px;
+  padding: 33px 0 36px 40px;
+}
+
+.adresseMail {
+  background-image: url("https://i.goopics.net/ngVKX_tb.png");
+  background-size: 30px;
+  padding: 33px 0 36px 40px;
+}
+
+.linkedin {
+  font-size: 10.5pt;
+  padding: 38px 0 37px 40px;
+  background-image: url("https://i.goopics.net/aWgJe_tb.png");
+  background-size: 33px;
+}
+
+.age {
+  padding: 40px 0 36px 40px;
+  background-image: url("https://i.goopics.net/VW03Z_tb.png");
+  background-size: 30px;
+}
+
+/* Partie formation */
+
+.titres, .lycee, .annee, .mention {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.formation {
+  /*margin-top: 30%;*/
+  text-transform: uppercase;
+}
+
+.formation .annee, .mention {
+  color: grey;
+  /*margin-left: 15%;*/
+}
+
+.formation .annee {
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.formation .lycee {
+  /*margin-left: 15%;*/
+  font-weight: bold;
+}
+
+.formation .mention {
+  margin-bottom: 15%;
+}
+
+/* Partie compétences */
+
+.competences .titre {
+  font-weight: bold;
+}
+
+.competences {
+  margin-top: 30%;
+  text-align: left;
+  margin-bottom: 8%;
+}
+
+.competences ul li {
+  margin-left: 10%;
+}
+
+.competences .premier {
+  margin-top: 3%;
+}
+
+/* Partie Activitées */
+
+.activites {
+  text-align: left;
+}
+
+.activites ul li {
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+
+a:hover, a {
+  text-decoration: none;
+  color: black;
+}
+
+.competencesDetail {
+  margin-bottom: 3%;
+}
+

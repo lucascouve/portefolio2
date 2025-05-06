@@ -1,0 +1,54 @@
+.tabsBS5 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  background: #f8f9fa;
+  border-radius: 50vh;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background: #e5c37f;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .rounded-nav .nav-link {
+    border-radius: 50rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .rounded-nav {
+    border-radius: 50rem !important;
+  }
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.nav-link {
+  color: #555;
+}
+
+.tab-pane {
+  margin-top: 2em;
+  background: #f8f9fa;
+}
+
+.tab-pane ul {
+  color: #6c757d !important;
+}
+
+.tab-pane h5, .tab-pane ul {
+  margin-left: 2rem;
+}
+
+.rounded-nav .nav-link:hover, .rounded-nav .nav-link:focus {
+  /*color: black;*/
+  font-weight: 300;
+}
+

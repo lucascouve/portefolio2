@@ -1,0 +1,20 @@
+.container.details {
+  background: #e4edf9;
+}
+
+.float-right.destinationSpan a {
+  color: var(--orange);
+  z-index: 1;
+}
+
+.float-right.destinationSpan a:hover {
+  z-index: 1;
+  color: #8c706b;
+  text-decoration: none;
+}
+
+.descriptifProjet {
+  font-size: 4.5vh;
+  margin-bottom: 1.3vh;
+}
+
